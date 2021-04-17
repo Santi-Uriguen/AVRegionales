@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/AVRegionales/static/css/main.e111138b.chunk.css",
-    "main.js": "/AVRegionales/static/js/main.e0f895dc.chunk.js",
-    "main.js.map": "/AVRegionales/static/js/main.e0f895dc.chunk.js.map",
+    "main.css": "/AVRegionales/static/css/main.d8523282.chunk.css",
+    "main.js": "/AVRegionales/static/js/main.2afc73a7.chunk.js",
+    "main.js.map": "/AVRegionales/static/js/main.2afc73a7.chunk.js.map",
     "runtime-main.js": "/AVRegionales/static/js/runtime-main.8bd99e8a.js",
     "runtime-main.js.map": "/AVRegionales/static/js/runtime-main.8bd99e8a.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/AVRegionales/static/css/2.4c97ca4f.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.c3ee6275.chunk.js.map": "/AVRegionales/static/js/3.c3ee6275.chunk.js.map",
     "index.html": "/AVRegionales/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/AVRegionales/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.e111138b.chunk.css.map": "/AVRegionales/static/css/main.e111138b.chunk.css.map",
+    "static/css/main.d8523282.chunk.css.map": "/AVRegionales/static/css/main.d8523282.chunk.css.map",
     "static/js/2.d1cb9d9b.chunk.js.LICENSE.txt": "/AVRegionales/static/js/2.d1cb9d9b.chunk.js.LICENSE.txt",
     "static/media/Mates 3.8e2a248b.png": "/AVRegionales/static/media/Mates 3.8e2a248b.png",
     "static/media/Pins Universidad.7e06621f.jpg": "/AVRegionales/static/media/Pins Universidad.7e06621f.jpg",
@@ -25,13 +25,14 @@
     "static/media/cucharita 6.d521ca5a.png": "/AVRegionales/static/media/cucharita 6.d521ca5a.png",
     "static/media/cucharita 7.c020fc69.png": "/AVRegionales/static/media/cucharita 7.c020fc69.png",
     "static/media/cucharita 8.af08ff13.png": "/AVRegionales/static/media/cucharita 8.af08ff13.png",
-    "static/media/cucharita 9.23ead630.png": "/AVRegionales/static/media/cucharita 9.23ead630.png"
+    "static/media/cucharita 9.23ead630.png": "/AVRegionales/static/media/cucharita 9.23ead630.png",
+    "static/media/whatsapp.a1c0a1e0.svg": "/AVRegionales/static/media/whatsapp.a1c0a1e0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8bd99e8a.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.d1cb9d9b.chunk.js",
-    "static/css/main.e111138b.chunk.css",
-    "static/js/main.e0f895dc.chunk.js"
+    "static/css/main.d8523282.chunk.css",
+    "static/js/main.2afc73a7.chunk.js"
   ]
 }
