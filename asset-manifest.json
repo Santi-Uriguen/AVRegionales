@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/AVRegionales/static/css/main.e111138b.chunk.css",
+    "main.js": "/AVRegionales/static/js/main.b6883eeb.chunk.js",
+    "main.js.map": "/AVRegionales/static/js/main.b6883eeb.chunk.js.map",
+    "runtime-main.js": "/AVRegionales/static/js/runtime-main.8bd99e8a.js",
+    "runtime-main.js.map": "/AVRegionales/static/js/runtime-main.8bd99e8a.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/AVRegionales/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.d1cb9d9b.chunk.js": "/AVRegionales/static/js/2.d1cb9d9b.chunk.js",
+    "static/js/2.d1cb9d9b.chunk.js.map": "/AVRegionales/static/js/2.d1cb9d9b.chunk.js.map",
+    "static/js/3.c3ee6275.chunk.js": "/AVRegionales/static/js/3.c3ee6275.chunk.js",
+    "static/js/3.c3ee6275.chunk.js.map": "/AVRegionales/static/js/3.c3ee6275.chunk.js.map",
+    "index.html": "/AVRegionales/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/AVRegionales/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.e111138b.chunk.css.map": "/AVRegionales/static/css/main.e111138b.chunk.css.map",
+    "static/js/2.d1cb9d9b.chunk.js.LICENSE.txt": "/AVRegionales/static/js/2.d1cb9d9b.chunk.js.LICENSE.txt",
+    "static/media/Mates 3.8e2a248b.png": "/AVRegionales/static/media/Mates 3.8e2a248b.png",
+    "static/media/Pins Universidad.7e06621f.jpg": "/AVRegionales/static/media/Pins Universidad.7e06621f.jpg",
+    "static/media/cucharita 1.211d531e.jpg": "/AVRegionales/static/media/cucharita 1.211d531e.jpg",
+    "static/media/cucharita 10.f6a271a9.png": "/AVRegionales/static/media/cucharita 10.f6a271a9.png",
+    "static/media/cucharita 2.a2ce750f.jpg": "/AVRegionales/static/media/cucharita 2.a2ce750f.jpg",
+    "static/media/cucharita 3.01236cc1.png": "/AVRegionales/static/media/cucharita 3.01236cc1.png",
+    "static/media/cucharita 4.4f6c33a1.png": "/AVRegionales/static/media/cucharita 4.4f6c33a1.png",
+    "static/media/cucharita 5.b927aec3.png": "/AVRegionales/static/media/cucharita 5.b927aec3.png",
+    "static/media/cucharita 6.d521ca5a.png": "/AVRegionales/static/media/cucharita 6.d521ca5a.png",
+    "static/media/cucharita 7.c020fc69.png": "/AVRegionales/static/media/cucharita 7.c020fc69.png",
+    "static/media/cucharita 8.af08ff13.png": "/AVRegionales/static/media/cucharita 8.af08ff13.png",
+    "static/media/cucharita 9.23ead630.png": "/AVRegionales/static/media/cucharita 9.23ead630.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bd99e8a.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.d1cb9d9b.chunk.js",
+    "static/css/main.e111138b.chunk.css",
+    "static/js/main.b6883eeb.chunk.js"
+  ]
+}
