@@ -87,5 +87,17 @@
         }
       }
     }
+    .whatsapp {
+      position: fixed;
+      bottom: 5%;
+      right: 5%;
+      z-index: 100;
+      .wpIcon {
+        width: 3em;
+        &:hover {
+          width: 3.2em;
+        }
+      }
+    }
   }
 }

@@ -65,5 +65,14 @@
         display: none; }
       .App .main .cardContainer .CardTemplate .CardBody .buttonshow {
         display: block; }
+  .App .main .whatsapp {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 100; }
+    .App .main .whatsapp .wpIcon {
+      width: 3em; }
+      .App .main .whatsapp .wpIcon:hover {
+        width: 3.2em; }
 
 /*# sourceMappingURL=App.css.map */
