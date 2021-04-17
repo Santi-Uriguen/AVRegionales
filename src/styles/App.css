@@ -1,0 +1,69 @@
+* {
+  overflow-x: hidden; }
+
+.App .header {
+  width: 100%; }
+  .App .header .banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
+.App .main {
+  margin-top: 20%;
+  background-color: #d3d3d3; }
+  .App .main .cardContainer {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column; }
+    .App .main .cardContainer .card-header {
+      background-color: #e6e6e6; }
+      .App .main .cardContainer .card-header h2 {
+        align-self: center;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; }
+    .App .main .cardContainer .CardTemplate {
+      margin-bottom: 5%;
+      width: 40%;
+      margin-left: 5%;
+      transition: all 0.6s ease-out; }
+      .App .main .cardContainer .CardTemplate:hover {
+        width: 95%;
+        transition: all 0.35s ease-in-out;
+        margin-left: 2.5%;
+        cursor: pointer; }
+      .App .main .cardContainer .CardTemplate .cardBannershow {
+        width: 100%;
+        display: flex; }
+        .App .main .cardContainer .CardTemplate .cardBannershow .bannerImg {
+          transform: scale(1);
+          transition: all 0.35s ease-out;
+          width: 100%; }
+      .App .main .cardContainer .CardTemplate .cardBannerhide {
+        display: none; }
+      .App .main .cardContainer .CardTemplate .CardBody .ExpandedCard {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        justify-content: space-evenly;
+        align-items: start;
+        grid-template-columns: repeat(3, 1fr); }
+        .App .main .cardContainer .CardTemplate .CardBody .ExpandedCard .Card {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 5% auto; }
+      .App .main .cardContainer .CardTemplate .CardBody .hide {
+        max-height: 0;
+        transition: all 0.5s linear;
+        overflow: hidden; }
+      .App .main .cardContainer .CardTemplate .CardBody .show {
+        max-height: 1000vh;
+        transition: max-height 1s ease-in; }
+      .App .main .cardContainer .CardTemplate .CardBody .buttonhide {
+        display: none; }
+      .App .main .cardContainer .CardTemplate .CardBody .buttonshow {
+        display: block; }
+
+/*# sourceMappingURL=App.css.map */
