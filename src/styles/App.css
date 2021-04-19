@@ -5,7 +5,8 @@
   width: 100%; }
   .App .header .navBar {
     position: fixed;
-    z-index: 10; }
+    z-index: 10;
+    width: 100%; }
   .App .header .banner {
     position: fixed;
     top: 0;
