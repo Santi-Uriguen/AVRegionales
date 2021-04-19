@@ -3,6 +3,9 @@
 
 .App .header {
   width: 100%; }
+  .App .header .navBar {
+    position: fixed;
+    z-index: 10; }
   .App .header .banner {
     position: fixed;
     top: 0;
@@ -10,6 +13,8 @@
     z-index: -1; }
 .App .main {
   margin-top: 20%;
+  margin-left: 1%;
+  width: 98%;
   background-color: #d3d3d3; }
   .App .main .cardContainer {
     padding-top: 5%;
@@ -24,7 +29,7 @@
         overflow: hidden; }
     .App .main .cardContainer .CardTemplate {
       margin-bottom: 5%;
-      width: 40%;
+      width: 65%;
       margin-left: 5%;
       transition: all 0.6s ease-out; }
       .App .main .cardContainer .CardTemplate:hover {
