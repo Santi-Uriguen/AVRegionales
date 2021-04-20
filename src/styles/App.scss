@@ -1,5 +1,12 @@
 * {
+  box-sizing: content-box;
   overflow-x: hidden;
+  .card-title {
+    overflow: hidden;
+  }
+}
+h2 {
+  overflow: hidden;
 }
 .App {
   .header {
@@ -8,6 +15,23 @@
       position: fixed;
       z-index: 10;
       width: 100%;
+      top: 0;
+      overflow: initial;
+      .navbar-brand {
+        color: #47506b;
+      }
+      .navbar-collapse {
+        overflow: initial;
+        .navbar-nav {
+          overflow: initial;
+          .nav-link {
+            color: #47506b;
+          }
+          .dropdown {
+            overflow: initial;
+          }
+        }
+      }
     }
     .banner {
       position: fixed;
@@ -18,33 +42,30 @@
   }
   .main {
     margin-top: 20%;
-    margin-left: 1%;
-    width: 98%;
-    background-color: #d3d3d3;
+    margin-left: 4%;
+    width: 92%;
+    background-color: #6a99c1;
+    border-radius: 4px;
     .cardContainer {
       padding-top: 5%;
       display: flex;
       flex-direction: column;
-      .card-header {
-        background-color: #e6e6e6;
-        h2 {
-          align-self: center;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-        }
-      }
-
-      .CardTemplate {
+      .ExpandedCard {
         margin-bottom: 5%;
         width: 65%;
+        height: auto;
         margin-left: 5%;
         transition: all 0.6s ease-out;
         &:hover {
           width: 95%;
           transition: all 0.35s ease-in-out;
           margin-left: 2.5%;
-          cursor: pointer;
+        }
+        .card-header {
+          background-color: #e6e6e6;
+          font-size: 1.5em;
+          font-weight: bold;
+          color: #47506b;
         }
         .cardBannershow {
           width: 100%;
@@ -58,20 +79,54 @@
         .cardBannerhide {
           display: none;
         }
-        .CardBody {
-          .ExpandedCard {
-            width: 90%;
+        .card-body {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .products {
+            width: 100%;
             margin: 0 auto;
-            display: grid;
+            display: flex;
             justify-content: space-evenly;
-            align-items: start;
-            grid-template-columns: repeat(3, 1fr);
-            .Card {
-              width: 80%;
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              margin: 5% auto;
+            align-items: flex-start;
+            .categoryCard {
+              width: 90%;
+              margin: 0 1%;
+              border: 1px solid rgba(50, 65, 152, 0.5);
+              .card-title {
+                color: #47506b;
+                margin: 4% 0 0 0;
+                padding: 0;
+                font-size: 1.4em;
+              }
+              .card {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5% auto;
+                border: 1px solid rgba(0, 0, 0, 0.25);
+                max-width: 22.5vw;
+                .card-img-top {
+                  max-width: 100%;
+                  margin: 0 0 5% 0;
+                }
+                .card-body {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  padding: 0;
+                  padding-bottom: 1em;
+                  .card-title {
+                    font-size: 1em;
+                  }
+                  .btn {
+                    width: 40%;
+                    margin: 10% 0 0 0;
+                  }
+                }
+              }
             }
           }
           .hide {
@@ -83,6 +138,10 @@
             max-height: 1000vh;
             transition: max-height 1s ease-in;
           }
+          .btn {
+            width: 20%;
+            margin: 2% 0 0 0;
+          }
           .buttonhide {
             display: none;
           }
@@ -90,6 +149,11 @@
             display: block;
           }
         }
+      }
+      .expanded {
+        width: 95%;
+        transition: all 0.35s ease-in-out;
+        margin-left: 2.5%;
       }
     }
     .whatsapp {
@@ -101,6 +165,51 @@
         width: 3em;
         &:hover {
           width: 3.2em;
+        }
+      }
+    }
+    .FormSection {
+      background-color: white;
+      border-radius: 10px;
+      width: 65%;
+      margin: auto;
+      padding: 5% 0;
+      margin-bottom: 2%;
+      .Form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .datosContacto {
+          display: flex;
+          justify-content: center;
+          width: 60%;
+          .dataForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 2%;
+          }
+        }
+        .city {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          width: 90%;
+          margin: auto;
+          div {
+            width: 30%;
+            margin-right: 2%;
+          }
+        }
+        .textareaContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+        .textarea {
+          width: 80%;
+          height: 10vw;
         }
       }
     }

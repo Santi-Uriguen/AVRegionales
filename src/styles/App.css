@@ -1,12 +1,30 @@
 * {
+  box-sizing: content-box;
   overflow-x: hidden; }
+  * .card-title {
+    overflow: hidden; }
+
+h2 {
+  overflow: hidden; }
 
 .App .header {
   width: 100%; }
   .App .header .navBar {
     position: fixed;
     z-index: 10;
-    width: 100%; }
+    width: 100%;
+    top: 0;
+    overflow: initial; }
+    .App .header .navBar .navbar-brand {
+      color: #47506b; }
+    .App .header .navBar .navbar-collapse {
+      overflow: initial; }
+      .App .header .navBar .navbar-collapse .navbar-nav {
+        overflow: initial; }
+        .App .header .navBar .navbar-collapse .navbar-nav .nav-link {
+          color: #47506b; }
+        .App .header .navBar .navbar-collapse .navbar-nav .dropdown {
+          overflow: initial; }
   .App .header .banner {
     position: fixed;
     top: 0;
@@ -14,63 +32,98 @@
     z-index: -1; }
 .App .main {
   margin-top: 20%;
-  margin-left: 1%;
-  width: 98%;
-  background-color: #d3d3d3; }
+  margin-left: 4%;
+  width: 92%;
+  background-color: #6a99c1;
+  border-radius: 4px; }
   .App .main .cardContainer {
     padding-top: 5%;
     display: flex;
     flex-direction: column; }
-    .App .main .cardContainer .card-header {
-      background-color: #e6e6e6; }
-      .App .main .cardContainer .card-header h2 {
-        align-self: center;
-        margin: 0;
-        padding: 0;
-        overflow: hidden; }
-    .App .main .cardContainer .CardTemplate {
+    .App .main .cardContainer .ExpandedCard {
       margin-bottom: 5%;
       width: 65%;
+      height: auto;
       margin-left: 5%;
       transition: all 0.6s ease-out; }
-      .App .main .cardContainer .CardTemplate:hover {
+      .App .main .cardContainer .ExpandedCard:hover {
         width: 95%;
         transition: all 0.35s ease-in-out;
-        margin-left: 2.5%;
-        cursor: pointer; }
-      .App .main .cardContainer .CardTemplate .cardBannershow {
+        margin-left: 2.5%; }
+      .App .main .cardContainer .ExpandedCard .card-header {
+        background-color: #e6e6e6;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #47506b; }
+      .App .main .cardContainer .ExpandedCard .cardBannershow {
         width: 100%;
         display: flex; }
-        .App .main .cardContainer .CardTemplate .cardBannershow .bannerImg {
+        .App .main .cardContainer .ExpandedCard .cardBannershow .bannerImg {
           transform: scale(1);
           transition: all 0.35s ease-out;
           width: 100%; }
-      .App .main .cardContainer .CardTemplate .cardBannerhide {
+      .App .main .cardContainer .ExpandedCard .cardBannerhide {
         display: none; }
-      .App .main .cardContainer .CardTemplate .CardBody .ExpandedCard {
-        width: 90%;
-        margin: 0 auto;
-        display: grid;
-        justify-content: space-evenly;
-        align-items: start;
-        grid-template-columns: repeat(3, 1fr); }
-        .App .main .cardContainer .CardTemplate .CardBody .ExpandedCard .Card {
-          width: 80%;
+      .App .main .cardContainer .ExpandedCard .card-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .App .main .cardContainer .ExpandedCard .card-body .products {
+          width: 100%;
+          margin: 0 auto;
           display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          margin: 5% auto; }
-      .App .main .cardContainer .CardTemplate .CardBody .hide {
-        max-height: 0;
-        transition: all 0.5s linear;
-        overflow: hidden; }
-      .App .main .cardContainer .CardTemplate .CardBody .show {
-        max-height: 1000vh;
-        transition: max-height 1s ease-in; }
-      .App .main .cardContainer .CardTemplate .CardBody .buttonhide {
-        display: none; }
-      .App .main .cardContainer .CardTemplate .CardBody .buttonshow {
-        display: block; }
+          justify-content: space-evenly;
+          align-items: flex-start; }
+          .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard {
+            width: 90%;
+            margin: 0 1%;
+            border: 1px solid rgba(50, 65, 152, 0.5); }
+            .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-title {
+              color: #47506b;
+              margin: 4% 0 0 0;
+              padding: 0;
+              font-size: 1.4em; }
+            .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card {
+              width: 90%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 5% auto;
+              border: 1px solid rgba(0, 0, 0, 0.25);
+              max-width: 22.5vw; }
+              .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card .card-img-top {
+                max-width: 100%;
+                margin: 0 0 5% 0; }
+              .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card .card-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                padding-bottom: 1em; }
+                .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card .card-body .card-title {
+                  font-size: 1em; }
+                .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card .card-body .btn {
+                  width: 40%;
+                  margin: 10% 0 0 0; }
+        .App .main .cardContainer .ExpandedCard .card-body .hide {
+          max-height: 0;
+          transition: all 0.5s linear;
+          overflow: hidden; }
+        .App .main .cardContainer .ExpandedCard .card-body .show {
+          max-height: 1000vh;
+          transition: max-height 1s ease-in; }
+        .App .main .cardContainer .ExpandedCard .card-body .btn {
+          width: 20%;
+          margin: 2% 0 0 0; }
+        .App .main .cardContainer .ExpandedCard .card-body .buttonhide {
+          display: none; }
+        .App .main .cardContainer .ExpandedCard .card-body .buttonshow {
+          display: block; }
+    .App .main .cardContainer .expanded {
+      width: 95%;
+      transition: all 0.35s ease-in-out;
+      margin-left: 2.5%; }
   .App .main .whatsapp {
     position: fixed;
     bottom: 5%;
@@ -80,5 +133,42 @@
       width: 3em; }
       .App .main .whatsapp .wpIcon:hover {
         width: 3.2em; }
+  .App .main .FormSection {
+    background-color: white;
+    border-radius: 10px;
+    width: 65%;
+    margin: auto;
+    padding: 5% 0;
+    margin-bottom: 2%; }
+    .App .main .FormSection .Form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .App .main .FormSection .Form .datosContacto {
+        display: flex;
+        justify-content: center;
+        width: 60%; }
+        .App .main .FormSection .Form .datosContacto .dataForm {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 2%; }
+      .App .main .FormSection .Form .city {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: auto; }
+        .App .main .FormSection .Form .city div {
+          width: 30%;
+          margin-right: 2%; }
+      .App .main .FormSection .Form .textareaContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+      .App .main .FormSection .Form .textarea {
+        width: 80%;
+        height: 10vw; }
 
 /*# sourceMappingURL=App.css.map */

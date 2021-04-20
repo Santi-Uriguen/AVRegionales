@@ -1,52 +1,47 @@
-import CardTemplate from "./components/CardTemplate.js";
-import cucharas from "../../../assets/cucharas.js";
-const cucharasBanner = [
-  "/AVRegionales/static/media/cucharita 4.4f6c33a1.png",
-  "/AVRegionales/static/media/cucharita 7.c020fc69.png",
-  "/AVRegionales/static/media/cucharita 10.f6a271a9.png",
-];
-const pinesBanner = [
-  "/AVRegionales/static/media/cucharita 4.4f6c33a1.png",
-  "/AVRegionales/static/media/cucharita 7.c020fc69.png",
-  "/AVRegionales/static/media/cucharita 10.f6a271a9.png",
-];
+import ExpandedCard from "./components/ExpandedCard.js";
+import products, {
+  cucharasBanner,
+  matesBanner,
+  pinsBanner,
+} from "../../../assets/products.js";
+
 export default function CardContainer() {
   return (
     <section className="cardContainer">
-      <CardTemplate
+      <ExpandedCard
         name="cucharas"
         src={cucharasBanner}
         title="Cucharas"
         text=""
-        srcArray={cucharas}
+        srcArray={products.cucharas}
       />
-      <CardTemplate
-        name="pines"
-        src={pinesBanner}
-        title="Pines"
-        text=""
-        srcArray={cucharas}
-      />
-      <CardTemplate
+      <ExpandedCard
         name="mates"
-        src=""
+        src={matesBanner}
         title="Mates & bombillas"
         text=""
-        srcArray={cucharas}
+        srcArray={products.mates}
       />
-      <CardTemplate
+      <ExpandedCard
+        name="pines"
+        src={pinsBanner}
+        title="Pines"
+        text=""
+        srcArray={products.pins}
+      />
+      <ExpandedCard
         name="vasos"
         src=""
         title="Vasos"
         text=""
-        srcArray={cucharas}
+        srcArray={products.cucharas}
       />
-      <CardTemplate
+      <ExpandedCard
         name="empresariales"
         src=""
         title="Productos empresariales"
         text=""
-        srcArray={cucharas}
+        srcArray={products.cucharas}
       />
     </section>
   );
