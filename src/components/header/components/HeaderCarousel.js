@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import Mate from "../../../assets/Mates 3.png";
-import Cucharita from "../../../assets/cucharita 8.png";
-import Pins from "../../../assets/Pins Universidad.jpg";
+import Mate from "../../../assets/MateBanner3.png";
+import Cucharita from "../../../assets/CucharaBanner1.png";
+import Pins from "../../../assets/PinBanner3.jpg";
 export default function HeaderCarousel() {
   return (
     <Carousel className="banner">

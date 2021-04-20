@@ -4,6 +4,7 @@ import Whatsapp from "./Whatsapp/Whatsapp.js";
 export default function Main() {
   return (
     <main className="main">
+      <h1>AV Regionales</h1>
       <CardContainer />
       <ContactForm />
       <Whatsapp />

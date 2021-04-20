@@ -2,7 +2,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 export default function ContactForm() {
   return (
-    <section className="FormSection">
+    <section className="FormSection" id="contact">
       <Form className="Form">
         <Form.Group controlId="formGroupEmail" className="datosContacto">
           <div className="dataForm">

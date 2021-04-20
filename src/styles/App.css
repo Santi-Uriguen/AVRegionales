@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 * {
   box-sizing: content-box;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Merriweather", serif; }
   * .card-title {
     overflow: hidden; }
 
@@ -16,13 +18,15 @@ h2 {
     top: 0;
     overflow: initial; }
     .App .header .navBar .navbar-brand {
-      color: #47506b; }
+      width: 6%; }
+      .App .header .navBar .navbar-brand img {
+        width: 100%; }
     .App .header .navBar .navbar-collapse {
       overflow: initial; }
       .App .header .navBar .navbar-collapse .navbar-nav {
         overflow: initial; }
         .App .header .navBar .navbar-collapse .navbar-nav .nav-link {
-          color: #47506b; }
+          color: #3d475c; }
         .App .header .navBar .navbar-collapse .navbar-nav .dropdown {
           overflow: initial; }
   .App .header .banner {
@@ -30,31 +34,40 @@ h2 {
     top: 0;
     width: 100%;
     z-index: -1; }
+    .App .header .banner .carousel-indicators {
+      display: none; }
+    .App .header .banner .carousel-control-prev {
+      display: none; }
+    .App .header .banner .carousel-control-next {
+      display: none; }
 .App .main {
-  margin-top: 20%;
-  margin-left: 4%;
-  width: 92%;
-  background-color: #6a99c1;
-  border-radius: 4px; }
+  padding-top: 20%;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(77, 77, 77, 0.55); }
+  .App .main h1 {
+    font-weight: bold;
+    color: #002266;
+    overflow: hidden;
+    margin-left: 5%; }
   .App .main .cardContainer {
     padding-top: 5%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     .App .main .cardContainer .ExpandedCard {
       margin-bottom: 5%;
       width: 65%;
       height: auto;
-      margin-left: 5%;
       transition: all 0.6s ease-out; }
       .App .main .cardContainer .ExpandedCard:hover {
-        width: 95%;
-        transition: all 0.35s ease-in-out;
-        margin-left: 2.5%; }
+        width: 90%;
+        transition: all 0.35s ease-in-out; }
       .App .main .cardContainer .ExpandedCard .card-header {
         background-color: #e6e6e6;
         font-size: 1.5em;
         font-weight: bold;
-        color: #47506b; }
+        color: #002266; }
       .App .main .cardContainer .ExpandedCard .cardBannershow {
         width: 100%;
         display: flex; }
@@ -65,10 +78,12 @@ h2 {
       .App .main .cardContainer .ExpandedCard .cardBannerhide {
         display: none; }
       .App .main .cardContainer .ExpandedCard .card-body {
-        width: 100%;
+        width: 96%;
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        padding: 2%;
+        margin: auto; }
         .App .main .cardContainer .ExpandedCard .card-body .products {
           width: 100%;
           margin: 0 auto;
@@ -80,7 +95,7 @@ h2 {
             margin: 0 1%;
             border: 1px solid rgba(50, 65, 152, 0.5); }
             .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-title {
-              color: #47506b;
+              color: #002266;
               margin: 4% 0 0 0;
               padding: 0;
               font-size: 1.4em; }
@@ -121,9 +136,8 @@ h2 {
         .App .main .cardContainer .ExpandedCard .card-body .buttonshow {
           display: block; }
     .App .main .cardContainer .expanded {
-      width: 95%;
-      transition: all 0.35s ease-in-out;
-      margin-left: 2.5%; }
+      width: 90%;
+      transition: all 0.35s ease-in-out; }
   .App .main .whatsapp {
     position: fixed;
     bottom: 5%;
@@ -152,7 +166,8 @@ h2 {
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin: 0 2%; }
+          margin: 0 2%;
+          overflow: initial; }
       .App .main .FormSection .Form .city {
         display: flex;
         flex-wrap: wrap;
@@ -161,12 +176,14 @@ h2 {
         margin: auto; }
         .App .main .FormSection .Form .city div {
           width: 30%;
-          margin-right: 2%; }
+          margin-right: 2%;
+          overflow: initial; }
       .App .main .FormSection .Form .textareaContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%; }
+        width: 100%;
+        overflow: initial; }
       .App .main .FormSection .Form .textarea {
         width: 80%;
         height: 10vw; }

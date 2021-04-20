@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
 * {
   box-sizing: content-box;
   overflow-x: hidden;
+  font-family: "Merriweather", serif;
   .card-title {
     overflow: hidden;
   }
@@ -18,14 +21,17 @@ h2 {
       top: 0;
       overflow: initial;
       .navbar-brand {
-        color: #47506b;
+        width: 6%;
+        img {
+          width: 100%;
+        }
       }
       .navbar-collapse {
         overflow: initial;
         .navbar-nav {
           overflow: initial;
           .nav-link {
-            color: #47506b;
+            color: #3d475c;
           }
           .dropdown {
             overflow: initial;
@@ -38,34 +44,47 @@ h2 {
       top: 0;
       width: 100%;
       z-index: -1;
+      .carousel-indicators {
+        display: none;
+      }
+      .carousel-control-prev {
+        display: none;
+      }
+      .carousel-control-next {
+        display: none;
+      }
     }
   }
   .main {
-    margin-top: 20%;
-    margin-left: 4%;
-    width: 92%;
-    background-color: #6a99c1;
+    padding-top: 20%;
+    width: 100%;
     border-radius: 4px;
+    background-color: rgba(77, 77, 77, 0.55);
+    h1 {
+      font-weight: bold;
+      color: #002266;
+      overflow: hidden;
+      margin-left: 5%;
+    }
     .cardContainer {
       padding-top: 5%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       .ExpandedCard {
         margin-bottom: 5%;
         width: 65%;
         height: auto;
-        margin-left: 5%;
         transition: all 0.6s ease-out;
         &:hover {
-          width: 95%;
+          width: 90%;
           transition: all 0.35s ease-in-out;
-          margin-left: 2.5%;
         }
         .card-header {
           background-color: #e6e6e6;
           font-size: 1.5em;
           font-weight: bold;
-          color: #47506b;
+          color: #002266;
         }
         .cardBannershow {
           width: 100%;
@@ -80,10 +99,12 @@ h2 {
           display: none;
         }
         .card-body {
-          width: 100%;
+          width: 96%;
           display: flex;
           flex-direction: column;
           align-items: center;
+          padding: 2%;
+          margin: auto;
           .products {
             width: 100%;
             margin: 0 auto;
@@ -95,7 +116,7 @@ h2 {
               margin: 0 1%;
               border: 1px solid rgba(50, 65, 152, 0.5);
               .card-title {
-                color: #47506b;
+                color: #002266;
                 margin: 4% 0 0 0;
                 padding: 0;
                 font-size: 1.4em;
@@ -151,9 +172,8 @@ h2 {
         }
       }
       .expanded {
-        width: 95%;
+        width: 90%;
         transition: all 0.35s ease-in-out;
-        margin-left: 2.5%;
       }
     }
     .whatsapp {
@@ -188,6 +208,7 @@ h2 {
             flex-direction: column;
             align-items: center;
             margin: 0 2%;
+            overflow: initial;
           }
         }
         .city {
@@ -199,6 +220,7 @@ h2 {
           div {
             width: 30%;
             margin-right: 2%;
+            overflow: initial;
           }
         }
         .textareaContainer {
@@ -206,6 +228,7 @@ h2 {
           flex-direction: column;
           align-items: center;
           width: 100%;
+          overflow: initial;
         }
         .textarea {
           width: 80%;

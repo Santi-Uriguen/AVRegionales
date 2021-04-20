@@ -25,6 +25,15 @@ import Pin1 from "./Pin guitarra.png";
 import Pin2 from "./Pin Malvinas.png";
 import Pin3 from "./Pins patrios.png";
 import Pin4 from "./Pins Universidad.jpg";
+import PinBanner1 from "./PinBanner1.png";
+import PinBanner2 from "./PinBanner2.png";
+import PinBanner3 from "./PinBanner3.jpg";
+import MateBanner1 from "./MateBanner1.png";
+import MateBanner2 from "./MateBanner2.png";
+import MateBanner3 from "./MateBanner3.png";
+import CucharaBanner1 from "./CucharaBanner1.png";
+import CucharaBanner2 from "./CucharaBanner2.png";
+import CucharaBanner3 from "./CucharaBanner3.png";
 
 const products = {
   cucharas: [
@@ -148,9 +157,9 @@ const products = {
 };
 export default products;
 
-export const cucharasBanner = [CucharaCuatro, CucharaSiete, CucharaDiez];
-export const matesBanner = [mate2, mate4, mate5];
-export const pinsBanner = [Pin3, Pin2, Pin4];
+export const cucharasBanner = [CucharaBanner1, CucharaBanner2, CucharaBanner3];
+export const matesBanner = [MateBanner1, MateBanner2, MateBanner3];
+export const pinsBanner = [PinBanner1, PinBanner2, PinBanner3];
 
 // template del array:
 // "": [
