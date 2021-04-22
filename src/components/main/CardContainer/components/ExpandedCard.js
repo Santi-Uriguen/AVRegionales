@@ -13,7 +13,7 @@ export default function ExpandedCard(props) {
   };
   const moveOver = () => {
     let sectionY = document.getElementById(props.name).offsetTop;
-    sectionY = sectionY - sectionY * 0.2;
+    sectionY = sectionY - sectionY * 0.3;
     window.scrollTo({ top: sectionY, behavior: "smooth" });
   };
   return (

@@ -16,9 +16,16 @@ export default function HeaderNavbar() {
     document.getElementById("infoSection").className = "infoHide";
     document.getElementById("cardContainer").className = "cardContainer";
     document.getElementById("contact").className = "formSection";
-    window.scroll({ top: 0, behavior: "smooth" });
   };
-  const scrollTo = () => {};
+  const scrollTo = (e) => {
+    const id = e.target.getAttribute("index");
+    let height = document.getElementById(id).offsetTop;
+    height = height - 75;
+    window.scroll({
+      top: height,
+      behavior: "smooth",
+    });
+  };
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 100) {
@@ -30,41 +37,98 @@ export default function HeaderNavbar() {
   });
   return (
     <Navbar bg="light" expand="lg" className={"navBar " + className}>
-      <Navbar.Brand href="#main" onClick={infoClose}>
-        <img src={Logo} alt="AV logo" />
-        <h1 className="title">AV Regionales</h1>
+      <Navbar.Brand>
+        <img
+          src={Logo}
+          alt="AV logo"
+          index="main"
+          onClick={(e) => {
+            scrollTo(e);
+            infoClose();
+          }}
+        />
+        <h1
+          className="title"
+          index="main"
+          onClick={(e) => {
+            scrollTo(e);
+            infoClose();
+          }}
+        >
+          AV Regionales
+        </h1>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#main" onClick={infoClose}>
+          <Nav.Link
+            index="main"
+            onClick={(e) => {
+              scrollTo(e);
+              infoClose();
+            }}
+          >
             Inicio
           </Nav.Link>
-          <Nav.Link href="#contact" onClick={infoClose}>
+          <Nav.Link
+            index="contact"
+            onClick={(e) => {
+              infoClose();
+              scrollTo(e);
+            }}
+          >
             Contacto
           </Nav.Link>
           <NavDropdown title="Productos" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#cucharas" onClick={infoClose}>
+            <NavDropdown.Item
+              index="cucharas"
+              onClick={(e) => {
+                infoClose();
+                scrollTo(e);
+              }}
+            >
               Cucharas
             </NavDropdown.Item>
-            <NavDropdown.Item href="#mates" onClick={infoClose}>
+            <NavDropdown.Item
+              index="mates"
+              onClick={(e) => {
+                infoClose();
+                scrollTo(e);
+              }}
+            >
               Mates & bombillas
             </NavDropdown.Item>
-            <NavDropdown.Item href="#pines" onClick={infoClose}>
+            <NavDropdown.Item
+              index="pines"
+              onClick={(e) => {
+                infoClose();
+                scrollTo(e);
+              }}
+            >
               Pines
             </NavDropdown.Item>
-            <NavDropdown.Item href="#vasos" onClick={infoClose}>
+            <NavDropdown.Item
+              index="vasos"
+              onClick={(e) => {
+                infoClose();
+                scrollTo(e);
+              }}
+            >
               Vasos
             </NavDropdown.Item>
-            <NavDropdown.Item href="#empresariales" onClick={infoClose}>
+            <NavDropdown.Item
+              index="empresariales"
+              onClick={(e) => {
+                infoClose();
+                scrollTo(e);
+              }}
+            >
               Productos empresariales
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Nav className="quienesNav">
-          <Nav.Link href="" onClick={infoOpen}>
-            Quiénes somos
-          </Nav.Link>
+          <Nav.Link onClick={infoOpen}>Quiénes somos</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
