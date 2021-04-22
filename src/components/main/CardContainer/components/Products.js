@@ -9,7 +9,6 @@ export default function Products(props) {
           <Card key={index} className="categoryCard">
             <Card.Title>{props.srcArray[index].title}</Card.Title>
             {source.products.map((prods, i) => {
-              console.log(prods);
               return (
                 <Card key={i}>
                   <Card.Img variant="top" src={Object.values(prods.src)} />

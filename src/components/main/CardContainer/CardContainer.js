@@ -7,7 +7,7 @@ import products, {
 
 export default function CardContainer() {
   return (
-    <section className="cardContainer">
+    <section className="cardContainer" id="cardContainer">
       <ExpandedCard
         name="cucharas"
         src={cucharasBanner}

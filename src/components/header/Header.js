@@ -4,6 +4,7 @@ export default function Header() {
   return (
     <header className="header">
       <HeaderNavbar />
+      <h1 className="title">AV Regionales</h1>
       <HeaderCarousel />
     </header>
   );
