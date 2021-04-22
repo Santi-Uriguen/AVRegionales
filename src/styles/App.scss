@@ -35,11 +35,22 @@ h2 {
       width: 100%;
       top: 0;
       overflow: initial;
-      height: 3vw;
       .navbar-brand {
-        width: 6%;
+        display: flex;
+        width: 30%;
+        align-items: center;
         img {
-          width: 100%;
+          width: 15%;
+          height: 3vw;
+        }
+        .title {
+          padding: 1% 1% 2% 1%;
+          text-align: left;
+          background-color: #f8f9fa;
+          width: 70%;
+          margin: auto 0;
+          color: #0055ff;
+          font-size: 1.7em;
         }
       }
       .navbar-collapse {
@@ -48,6 +59,10 @@ h2 {
           overflow: initial;
           .nav-link {
             color: #3d475c;
+            &:hover {
+              color: #0055ff;
+              font-weight: bold;
+            }
           }
           .dropdown {
             overflow: initial;
@@ -55,6 +70,55 @@ h2 {
         }
         .quienesNav {
           margin-right: 5%;
+        }
+      }
+    }
+    .navBarBig {
+      height: 7vw;
+      transition: height 0.3s ease;
+      .navbar-brand {
+        display: flex;
+        width: 20%;
+        align-items: center;
+        overflow: hidden;
+        transform-origin: left;
+        transition: width 0.25s linear;
+        img {
+          transform: scale(0);
+        }
+        .title {
+          padding: 1% 1% 2% 1%;
+          text-align: left;
+          background-color: #f8f9fa;
+          width: 100%;
+          margin: auto 0 auto -10%;
+          color: #0055ff;
+          font-size: 1.7em;
+          transform: scale(1);
+          transform-origin: left;
+          transition: transform 0.25s linear;
+        }
+      }
+    }
+    .navBarShort {
+      height: 3.5vw;
+      transition: height 0.3s ease;
+      .navbar-brand {
+        display: flex;
+        width: 7%;
+        align-items: center;
+        overflow: hidden;
+        transition: width 0.3s linear;
+        transform-origin: left;
+        img {
+          width: 100%;
+          height: 5vw;
+          transform: scale(1.5);
+          transition: transform 0.3s ease-in;
+          transform-origin: left;
+        }
+        .title {
+          transform: scale(0);
         }
       }
     }
@@ -72,14 +136,6 @@ h2 {
       .carousel-control-next {
         display: none;
       }
-    }
-    .title {
-      padding: 1% 1% 2% 1%;
-      text-align: center;
-      background-color: #f8f9fa;
-      width: 100%;
-      margin: 4vw 0 0 0;
-      color: #002266;
     }
   }
   .main {
@@ -100,11 +156,12 @@ h2 {
       align-items: center;
       .ExpandedCard {
         margin-bottom: 5%;
-        width: 65%;
+        width: 60%;
         height: auto;
         transition: all 0.6s ease-out;
+        overflow: hidden;
         &:hover {
-          width: 90%;
+          width: 85%;
           transition: all 0.35s ease-in-out;
         }
         .card-header {
@@ -199,7 +256,7 @@ h2 {
         }
       }
       .expanded {
-        width: 90%;
+        width: 85%;
         transition: all 0.35s ease-in-out;
       }
     }
@@ -258,7 +315,7 @@ h2 {
       display: block;
       z-index: 10;
       width: 96%;
-      margin: -10% 0 2% 2%;
+      margin: 0 0 2% 2%;
       .card {
         .card-body {
           .imgContainer {
@@ -328,8 +385,6 @@ h2 {
           }
         }
       }
-    }
-    a {
     }
   }
 }
