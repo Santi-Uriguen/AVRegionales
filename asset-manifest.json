@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/AVRegionales/static/css/main.328bc78f.chunk.css",
-    "main.js": "/AVRegionales/static/js/main.b900fe2d.chunk.js",
-    "main.js.map": "/AVRegionales/static/js/main.b900fe2d.chunk.js.map",
-    "runtime-main.js": "/AVRegionales/static/js/runtime-main.8bd99e8a.js",
-    "runtime-main.js.map": "/AVRegionales/static/js/runtime-main.8bd99e8a.js.map",
+    "main.css": "/AVRegionales/static/css/main.e5f721ce.chunk.css",
+    "main.js": "/AVRegionales/static/js/main.d2dfe4c9.chunk.js",
+    "main.js.map": "/AVRegionales/static/js/main.d2dfe4c9.chunk.js.map",
+    "runtime-main.js": "/AVRegionales/static/js/runtime-main.4d4a7d33.js",
+    "runtime-main.js.map": "/AVRegionales/static/js/runtime-main.4d4a7d33.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/AVRegionales/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.8e72fd58.chunk.js": "/AVRegionales/static/js/2.8e72fd58.chunk.js",
-    "static/js/2.8e72fd58.chunk.js.map": "/AVRegionales/static/js/2.8e72fd58.chunk.js.map",
-    "static/js/3.c3ee6275.chunk.js": "/AVRegionales/static/js/3.c3ee6275.chunk.js",
-    "static/js/3.c3ee6275.chunk.js.map": "/AVRegionales/static/js/3.c3ee6275.chunk.js.map",
+    "static/js/2.dca62bf4.chunk.js": "/AVRegionales/static/js/2.dca62bf4.chunk.js",
+    "static/js/2.dca62bf4.chunk.js.map": "/AVRegionales/static/js/2.dca62bf4.chunk.js.map",
+    "static/js/3.183ba40b.chunk.js": "/AVRegionales/static/js/3.183ba40b.chunk.js",
+    "static/js/3.183ba40b.chunk.js.map": "/AVRegionales/static/js/3.183ba40b.chunk.js.map",
     "index.html": "/AVRegionales/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/AVRegionales/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.328bc78f.chunk.css.map": "/AVRegionales/static/css/main.328bc78f.chunk.css.map",
-    "static/js/2.8e72fd58.chunk.js.LICENSE.txt": "/AVRegionales/static/js/2.8e72fd58.chunk.js.LICENSE.txt",
+    "static/css/main.e5f721ce.chunk.css.map": "/AVRegionales/static/css/main.e5f721ce.chunk.css.map",
+    "static/js/2.dca62bf4.chunk.js.LICENSE.txt": "/AVRegionales/static/js/2.dca62bf4.chunk.js.LICENSE.txt",
     "static/media/CucharaBanner1.36d7ed3b.png": "/AVRegionales/static/media/CucharaBanner1.36d7ed3b.png",
     "static/media/CucharaBanner2.d683f36e.png": "/AVRegionales/static/media/CucharaBanner2.d683f36e.png",
     "static/media/CucharaBanner3.359adf70.png": "/AVRegionales/static/media/CucharaBanner3.359adf70.png",
@@ -57,10 +57,10 @@
     "static/media/whatsapp.a1c0a1e0.svg": "/AVRegionales/static/media/whatsapp.a1c0a1e0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8bd99e8a.js",
+    "static/js/runtime-main.4d4a7d33.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.8e72fd58.chunk.js",
-    "static/css/main.328bc78f.chunk.css",
-    "static/js/main.b900fe2d.chunk.js"
+    "static/js/2.dca62bf4.chunk.js",
+    "static/css/main.e5f721ce.chunk.css",
+    "static/js/main.d2dfe4c9.chunk.js"
   ]
 }
