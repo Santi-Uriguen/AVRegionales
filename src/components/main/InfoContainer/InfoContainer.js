@@ -25,15 +25,15 @@ export default function InfoContainer() {
           </Card.Text>
           <Card.Subtitle>Conocé nuestro taller!</Card.Subtitle>
           <div className="imgContainer">
-            <div>
+            <div className="minicard">
               <Img src={taller1} alt="taller 1" fluid />
               <p>Conjunto de maquinarias para aluminio</p>
             </div>
-            <div>
+            <div className="minicard">
               <Img src={taller2} alt="taller 2" fluid />
               <p>Máquinas cortadoras</p>
             </div>
-            <div>
+            <div className="minicard">
               <Img src={taller3} alt="taller 3" fluid />
               <p>Angel trabajando</p>
             </div>

@@ -1,0 +1,162 @@
+@media (max-width: 750px) {
+  * {
+    overflow: initial;
+  }
+  .App {
+    .header {
+      .navBar {
+        .navbar-collapse {
+          background-color: #f8f9fa;
+          .navbar-nav {
+            .nav-link {
+            }
+          }
+        }
+      }
+      .navBarBig {
+        height: 75px;
+        .navbar-brand {
+          width: 60%;
+          .title {
+            font-size: 1.3em;
+          }
+        }
+      }
+      .navBarShort {
+        height: 75px;
+        .navbar-brand {
+          width: 25%;
+        }
+      }
+      .banner {
+        width: 300%;
+      }
+    }
+    .main {
+      padding-top: 30%;
+      .cardContainer {
+        .ExpandedCard {
+          width: 95%;
+          .card-header {
+            font-size: 1.2em;
+          }
+          .cardBannershow {
+            :nth-last-child(1) {
+              display: none;
+            }
+          }
+          .card-body {
+            .products {
+              flex-direction: column;
+              align-items: center;
+              .categoryCard {
+                align-items: center;
+                width: 100%;
+                margin-bottom: 5%;
+                .card-title {
+                  font-size: 1em;
+                }
+                .card-body {
+                  flex-direction: row;
+                  width: 95%;
+                  min-width: 95%;
+                  overflow-x: scroll;
+                  margin: 5% 0;
+                  align-items: flex-start;
+                  .card {
+                    max-width: 100vh;
+                    min-width: fit-content;
+                    width: 100px;
+                    margin: 0 5%;
+                    .card-img-top {
+                    }
+                    .card-body {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+            .btn {
+              width: 40%;
+              margin: 2% 0 2% 0;
+            }
+          }
+        }
+        .expanded {
+          width: 95%;
+        }
+      }
+      .formSection {
+        width: 95%;
+        .Form {
+          .datosContacto {
+            width: 90%;
+            font-size: 0.85em;
+            input {
+              font-size: 0.85em;
+            }
+          }
+          .city {
+            font-size: 0.85em;
+            .form-group {
+              font-size: 0.85em;
+              select {
+                font-size: 0.85em;
+              }
+              input {
+                font-size: 0.85em;
+              }
+            }
+          }
+          .textareaContainer {
+            label {
+              font-size: 0.85em;
+            }
+            .textarea {
+              width: 90%;
+              height: 20vh;
+            }
+          }
+          button {
+            font-size: 0.85em;
+          }
+        }
+      }
+      .infoShow {
+        .imgContainer {
+          flex-direction: column;
+          justify-content: center;
+          .minicard {
+            width: 70% !important;
+          }
+        }
+      }
+    }
+    .footer {
+      .nav {
+        .card {
+          .card-title {
+            font-size: 0.75em;
+            text-align: center;
+          }
+          .card-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 6%;
+            .link-container {
+              font-size: 0.8em;
+            }
+            .imgLink {
+              width: 12%;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
