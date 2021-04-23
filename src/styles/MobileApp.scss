@@ -7,10 +7,11 @@
       .navBar {
         .navbar-collapse {
           background-color: #f8f9fa;
-          .navbar-nav {
-            .nav-link {
-            }
-          }
+        }
+        .show {
+          width: 100%;
+          margin: 0 -10%;
+          padding: 5% 10%;
         }
       }
       .navBarBig {
@@ -27,6 +28,9 @@
         .navbar-brand {
           width: 25%;
         }
+      }
+      .navbar-toggler {
+        margin-right: 5%;
       }
       .banner {
         width: 300%;

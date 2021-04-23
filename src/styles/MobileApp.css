@@ -4,6 +4,10 @@
 
   .App .header .navBar .navbar-collapse {
     background-color: #f8f9fa; }
+  .App .header .navBar .show {
+    width: 100%;
+    margin: 0 -10%;
+    padding: 5% 10%; }
   .App .header .navBarBig {
     height: 75px; }
     .App .header .navBarBig .navbar-brand {
@@ -14,6 +18,8 @@
     height: 75px; }
     .App .header .navBarShort .navbar-brand {
       width: 25%; }
+  .App .header .navbar-toggler {
+    margin-right: 5%; }
   .App .header .banner {
     width: 300%; }
   .App .main {
