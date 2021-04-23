@@ -247,7 +247,41 @@ h2 {
         overflow: initial; }
       .App .main .formSection .Form .textarea {
         width: 80%;
+        height: 10vw;
+        font-size: 1em; }
+      .App .main .formSection .Form .submitDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         height: 10vw; }
+      .App .main .formSection .Form .divShow .sendBtnShow {
+        display: block;
+        width: 20%; }
+      .App .main .formSection .Form .divShow .subImg {
+        transform: scale(0);
+        height: 0; }
+      .App .main .formSection .Form .divCheck .sendBtnShow {
+        transform: scale(0);
+        transition: all 0.25s ease;
+        height: 0; }
+      .App .main .formSection .Form .divCheck #checkImg {
+        transform: scale(0.7);
+        transition: all 0.25s ease; }
+      .App .main .formSection .Form .divCheck #failImg {
+        transform: scale(0);
+        height: 0; }
+      .App .main .formSection .Form .divFail .sendBtnShow {
+        transform: scale(0);
+        transition: all 0.25s ease;
+        height: 0; }
+      .App .main .formSection .Form .divFail #checkImg {
+        transform: scale(0);
+        height: 0; }
+      .App .main .formSection .Form .divFail #failImg {
+        transform: scale(0.7);
+        transition: all 0.25s ease; }
   .App .main .infoHide {
     display: none; }
   .App .main .infoShow {

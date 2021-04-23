@@ -78,7 +78,8 @@
         font-size: 0.85em; }
       .App .main .formSection .Form .textareaContainer .textarea {
         width: 90%;
-        height: 20vh; }
+        height: 20vh;
+        font-size: 0.7em; }
       .App .main .formSection .Form button {
         font-size: 0.85em; }
     .App .main .infoShow .imgContainer {

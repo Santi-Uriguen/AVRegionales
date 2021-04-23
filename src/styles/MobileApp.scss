@@ -73,8 +73,6 @@
                     min-width: fit-content;
                     width: 100px;
                     margin: 0 5%;
-                    .card-img-top {
-                    }
                     .card-body {
                       width: 100%;
                     }
@@ -121,6 +119,7 @@
             .textarea {
               width: 90%;
               height: 20vh;
+              font-size: 0.7em;
             }
           }
           button {

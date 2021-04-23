@@ -303,6 +303,55 @@ h2 {
         .textarea {
           width: 80%;
           height: 10vw;
+          font-size: 1em;
+        }
+        .submitDiv {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          height: 10vw;
+        }
+        .divShow {
+          .sendBtnShow {
+            display: block;
+            width: 20%;
+          }
+          .subImg {
+            transform: scale(0);
+            height: 0;
+          }
+        }
+        .divCheck {
+          .sendBtnShow {
+            transform: scale(0);
+            transition: all 0.25s ease;
+            height: 0;
+          }
+          #checkImg {
+            transform: scale(0.7);
+            transition: all 0.25s ease;
+          }
+          #failImg {
+            transform: scale(0);
+            height: 0;
+          }
+        }
+        .divFail {
+          .sendBtnShow {
+            transform: scale(0);
+            transition: all 0.25s ease;
+            height: 0;
+          }
+          #checkImg {
+            transform: scale(0);
+            height: 0;
+          }
+          #failImg {
+            transform: scale(0.7);
+            transition: all 0.25s ease;
+          }
         }
       }
     }
