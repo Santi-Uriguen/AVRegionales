@@ -17,7 +17,8 @@
   .App .header .banner {
     width: 300%; }
   .App .main {
-    padding-top: 30%; }
+    padding-top: 30%;
+    overflow: hidden; }
     .App .main .cardContainer .ExpandedCard {
       width: 95%; }
       .App .main .cardContainer .ExpandedCard .card-header {
