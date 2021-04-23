@@ -35,7 +35,8 @@ h2 {
     .App .header .navBar .navbar-brand {
       display: flex;
       width: 30%;
-      align-items: center; }
+      align-items: center;
+      cursor: pointer; }
       .App .header .navBar .navbar-brand img {
         width: 15%;
         height: 3vw; }
@@ -282,24 +283,28 @@ h2 {
       width: 3em; }
       .App .main .whatsapp .wpIcon:hover {
         width: 3.2em; }
-.App .footer .nav .card .card-title {
-  font-size: 1em;
-  margin: 0;
-  padding: 1%; }
-.App .footer .nav .card .card-footer {
-  width: 100%;
-  padding-bottom: 2.5%; }
-  .App .footer .nav .card .card-footer .link-container {
-    display: flex;
-    justify-content: center; }
-    .App .footer .nav .card .card-footer .link-container p {
-      margin-right: 5px; }
-    .App .footer .nav .card .card-footer .link-container img {
-      width: 65%; }
-  .App .footer .nav .card .card-footer .imgLink {
-    width: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+.App .footer .nav .card {
+  padding-top: 2%; }
+  .App .footer .nav .card .card-title {
+    font-size: 1em;
+    margin: 0;
+    padding: 1%; }
+  .App .footer .nav .card .card-footer {
+    width: 100%; }
+    .App .footer .nav .card .card-footer .link-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5%; }
+      .App .footer .nav .card .card-footer .link-container .card-link {
+        color: black; }
+      .App .footer .nav .card .card-footer .link-container span {
+        color: #0055ff; }
+      .App .footer .nav .card .card-footer .link-container img {
+        width: 65%; }
+    .App .footer .nav .card .card-footer .imgLink {
+      width: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 /*# sourceMappingURL=App.css.map */
