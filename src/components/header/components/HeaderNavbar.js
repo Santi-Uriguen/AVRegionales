@@ -9,12 +9,14 @@ export default function HeaderNavbar() {
   const infoOpen = () => {
     document.getElementById("infoSection").className = "infoShow";
     document.getElementById("cardContainer").className = "infoHide";
-    document.getElementById("contact").className = "infoHide";
+    document.getElementById("regionsContainer").className = "hide";
+    document.getElementById("contact").className = "hide";
     window.scroll({ top: 0, behavior: "smooth" });
   };
   const infoClose = () => {
     document.getElementById("infoSection").className = "infoHide";
     document.getElementById("cardContainer").className = "cardContainer";
+    document.getElementById("regionsContainer").className = "regionsContainer";
     document.getElementById("contact").className = "formSection";
   };
   const scrollTo = (e) => {
@@ -25,6 +27,13 @@ export default function HeaderNavbar() {
       top: height,
       behavior: "smooth",
     });
+  };
+  const goToIntro = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.querySelector(".header").className = "header hide";
+    document.querySelector(".footer").className = "footer hide";
+    document.querySelector(".main").className = "main intro";
+    document.querySelector(".introSection").className = "introSection";
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -38,36 +47,15 @@ export default function HeaderNavbar() {
   return (
     <Navbar bg="light" expand="lg" className={"navBar " + className}>
       <Navbar.Brand>
-        <img
-          src={Logo}
-          alt="AV logo"
-          index="main"
-          onClick={(e) => {
-            scrollTo(e);
-            infoClose();
-          }}
-        />
-        <h1
-          className="title"
-          index="main"
-          onClick={(e) => {
-            scrollTo(e);
-            infoClose();
-          }}
-        >
+        <img src={Logo} alt="AV logo" index="main" onClick={goToIntro} />
+        <h1 className="title" index="main" onClick={goToIntro}>
           AV Regionales
         </h1>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link
-            index="main"
-            onClick={(e) => {
-              scrollTo(e);
-              infoClose();
-            }}
-          >
+          <Nav.Link index="main" onClick={goToIntro}>
             Inicio
           </Nav.Link>
           <Nav.Link
@@ -78,6 +66,15 @@ export default function HeaderNavbar() {
             }}
           >
             Contacto
+          </Nav.Link>
+          <Nav.Link
+            index="regionsContainer"
+            onClick={(e) => {
+              infoClose();
+              scrollTo(e);
+            }}
+          >
+            Regiones
           </Nav.Link>
           <NavDropdown title="Productos" id="basic-nav-dropdown">
             <NavDropdown.Item

@@ -1,8 +1,8 @@
 import Card from "react-bootstrap/Card";
 import Img from "react-bootstrap/Image";
-import taller1 from "../../../assets/taller1.jpg";
-import taller2 from "../../../assets/taller2.jpg";
-import taller3 from "../../../assets/taller3.jpg";
+import taller1 from "../../../../assets/taller1.jpg";
+import taller2 from "../../../../assets/taller2.jpg";
+import taller3 from "../../../../assets/taller3.jpg";
 export default function InfoContainer() {
   return (
     <section className="infoHide" id="infoSection">

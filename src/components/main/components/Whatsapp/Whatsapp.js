@@ -1,4 +1,4 @@
-import whatsapp from "../../../assets/whatsapp.svg";
+import whatsapp from "../../../../assets/whatsapp.svg";
 export default function Whatsapp() {
   return (
     <div className="whatsapp">

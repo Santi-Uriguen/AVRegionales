@@ -150,6 +150,9 @@ h2 {
       display: flex;
       flex-direction: column;
       align-items: center;
+      .argSvg {
+        transform: scale(0.7);
+      }
       .ExpandedCard {
         margin-bottom: 5%;
         width: 60%;
@@ -390,6 +393,94 @@ h2 {
         }
       }
     }
+    .cardHide {
+      display: none;
+    }
+    .regionsContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 30vw;
+      .argSvg {
+        transform: scale(0.85);
+        // background-color: rgba(255, 255, 255, 0.2);
+        // border-radius: 14px;
+        fill: #e6e6e6;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.75em;
+        text-align: center;
+        color: white;
+      }
+      h4 {
+        padding: 1% 1% 2% 1%;
+        text-align: center;
+        color: #e6e6e6;
+        font-size: 3em;
+      }
+      p {
+        text-align: center;
+        color: #e6e6e6;
+        font-size: 1.4em;
+      }
+      .provincia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .provinceProducts {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          .regionCard {
+            width: 90%;
+            margin: 0 1%;
+            border: 1px solid rgba(50, 65, 152, 0.5);
+            .card-title {
+              color: #002266;
+              margin: 4% 0 0 0;
+              padding: 0;
+              font-size: 1.4em;
+              text-align: center;
+            }
+            .card-body {
+              .card {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5% auto;
+                border: 1px solid rgba(0, 0, 0, 0.25);
+                max-width: 22.5vw;
+                .card-img-top {
+                  max-width: 100%;
+                  margin: 0 0 5% 0;
+                }
+                .card-body {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  padding: 0;
+                  padding-bottom: 1em;
+                  .card-title {
+                    font-size: 1em;
+                  }
+                  .btn {
+                    width: 65%;
+                    margin: 10% 0 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .whatsapp {
       position: fixed;
       bottom: 5%;
@@ -401,6 +492,93 @@ h2 {
           width: 3.2em;
         }
       }
+    }
+  }
+  .intro {
+    padding: 0;
+    margin: 0;
+    .introSection {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      top: 0;
+      background: #fff;
+      .introTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card-title {
+          padding: 1% 1% 2% 1%;
+          text-align: left;
+          background-color: #f8f9fa;
+          color: #0055ff;
+          font-size: 3em;
+        }
+      }
+      .introContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 1.25rem 0;
+        .infoSections {
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          div {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .introProds {
+            h3 {
+              color: #0055ff;
+            }
+            .introGallery {
+              width: 85%;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+              margin: 10% 0;
+              img {
+                width: 50%;
+              }
+            }
+          }
+          .introRegion {
+            h3 {
+              margin: 0;
+              color: #0055ff;
+            }
+            .argSvg {
+              transform: scale(0.65);
+              margin: -10% 0 -5% 0;
+              path {
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .formSection {
+          background-color: rgba(0, 0, 0, 0.03);
+          width: 100%;
+          border-top: 1px solid rgba(0, 0, 0, 0.125);
+        }
+      }
+    }
+    .cardContainer {
+      display: none;
+    }
+    .regionsContainer {
+      display: none;
     }
   }
   .footer {
@@ -437,5 +615,8 @@ h2 {
         }
       }
     }
+  }
+  .hide {
+    display: none !important;
   }
 }

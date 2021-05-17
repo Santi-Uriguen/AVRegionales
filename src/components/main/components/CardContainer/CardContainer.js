@@ -3,9 +3,9 @@ import products, {
   cucharasBanner,
   matesBanner,
   pinsBanner,
-} from "../../../assets/products.js";
+} from "../../../../assets/products.js";
 
-export default function CardContainer() {
+export default function CardContainer(props) {
   return (
     <section className="cardContainer" id="cardContainer">
       <ExpandedCard

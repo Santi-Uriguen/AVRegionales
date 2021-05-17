@@ -4,7 +4,7 @@ import IgLogo from "../../assets/ig.png";
 import FbLogo from "../../assets/fb.png";
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer hide">
       <Nav>
         <Card>
           <Card.Footer>

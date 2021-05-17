@@ -1,7 +1,7 @@
 import Form from "react-bootstrap/Form";
 import Image from "react-bootstrap/Image";
-import Check from "../../../assets/check.svg";
-import Fail from "../../../assets/fail.svg";
+import Check from "../../../../assets/check.svg";
+import Fail from "../../../../assets/fail.svg";
 import { useState } from "react";
 export default function ContactForm() {
   const [state, setState] = useState({

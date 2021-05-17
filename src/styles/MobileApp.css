@@ -1,105 +1,169 @@
 @media (max-width: 750px) {
   * {
-    overflow-x: hidden; }
-
+    overflow-x: hidden;
+  }
   .App .header .navBar .navbar-collapse {
-    background-color: #f8f9fa; }
+    background-color: #f8f9fa;
+  }
   .App .header .navBar .show {
     width: 100%;
     margin: 0 -10%;
-    padding: 5% 10%; }
+    padding: 5% 10%;
+  }
   .App .header .navBarBig {
-    height: 75px; }
-    .App .header .navBarBig .navbar-brand {
-      width: 60%; }
-      .App .header .navBarBig .navbar-brand .title {
-        font-size: 1.3em; }
+    height: 75px;
+  }
+  .App .header .navBarBig .navbar-brand {
+    width: 60%;
+  }
+  .App .header .navBarBig .navbar-brand .title {
+    font-size: 1.3em;
+  }
   .App .header .navBarShort {
-    height: 75px; }
-    .App .header .navBarShort .navbar-brand {
-      width: 25%; }
+    height: 75px;
+  }
+  .App .header .navBarShort .navbar-brand {
+    width: 25%;
+  }
   .App .header .navbar-toggler {
-    margin-right: 5%; }
+    margin-right: 5%;
+  }
   .App .header .banner {
-    width: 300%; }
+    width: 300%;
+  }
   .App .main {
     padding-top: 30%;
-    overflow: hidden; }
-    .App .main .cardContainer .ExpandedCard {
-      width: 95%; }
-      .App .main .cardContainer .ExpandedCard .card-header {
-        font-size: 1.2em; }
-      .App .main .cardContainer .ExpandedCard .cardBannershow :nth-last-child(1) {
-        display: none; }
-      .App .main .cardContainer .ExpandedCard .card-body .products {
-        flex-direction: column;
-        align-items: center; }
-        .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard {
-          align-items: center;
-          width: 100%;
-          margin-bottom: 5%; }
-          .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-title {
-            font-size: 1em; }
-          .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-body {
+    overflow: hidden;
+  }
+  .App .main .cardContainer .ExpandedCard {
+    width: 95%;
+  }
+  .App .main .cardContainer .ExpandedCard .card-header {
+    font-size: 1.2em;
+  }
+  .App .main .cardContainer .ExpandedCard .cardBannershow :nth-last-child(1) {
+    display: none;
+  }
+  .App .main .cardContainer .ExpandedCard .card-body .products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-title {
+    font-size: 1em;
+  }
+  .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
             flex-direction: row;
-            width: 95%;
-            min-width: 95%;
-            overflow-x: scroll;
-            margin: 5% 0;
-            align-items: flex-start; }
-            .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-body .card {
-              max-width: 100vh;
-              min-width: fit-content;
-              width: 100px;
-              margin: 0 5%; }
-              .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-body .card .card-body {
-                width: 100%; }
-      .App .main .cardContainer .ExpandedCard .card-body .btn {
-        width: 40%;
-        margin: 2% 0 2% 0; }
-    .App .main .cardContainer .expanded {
-      width: 95%; }
-    .App .main .formSection {
-      width: 95%; }
-      .App .main .formSection .Form .datosContacto {
-        width: 90%;
-        font-size: 0.85em; }
-        .App .main .formSection .Form .datosContacto input {
-          font-size: 0.85em; }
-      .App .main .formSection .Form .city {
-        font-size: 0.85em; }
-        .App .main .formSection .Form .city .form-group {
-          font-size: 0.85em; }
-          .App .main .formSection .Form .city .form-group select {
-            font-size: 0.85em; }
-          .App .main .formSection .Form .city .form-group input {
-            font-size: 0.85em; }
-      .App .main .formSection .Form .textareaContainer label {
-        font-size: 0.85em; }
-      .App .main .formSection .Form .textareaContainer .textarea {
-        width: 90%;
-        height: 20vh;
-        font-size: 0.7em; }
-      .App .main .formSection .Form button {
-        font-size: 0.85em; }
-    .App .main .infoShow .imgContainer {
-      flex-direction: column;
-      justify-content: center; }
-      .App .main .infoShow .imgContainer .minicard {
-        width: 70% !important; }
+    width: 95%;
+    min-width: 95%;
+    overflow-x: scroll;
+    margin: 5% 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-body .card {
+    max-width: 100vh;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    width: 100px;
+    margin: 0 5%;
+  }
+  .App .main .cardContainer .ExpandedCard .card-body .products .categoryCard .card-body .card .card-body {
+    width: 100%;
+  }
+  .App .main .cardContainer .ExpandedCard .card-body .btn {
+    width: 40%;
+    margin: 2% 0 2% 0;
+  }
+  .App .main .cardContainer .expanded {
+    width: 95%;
+  }
+  .App .main .formSection {
+    width: 95%;
+  }
+  .App .main .formSection .Form .datosContacto {
+    width: 90%;
+    font-size: 0.85em;
+  }
+  .App .main .formSection .Form .datosContacto input {
+    font-size: 0.85em;
+  }
+  .App .main .formSection .Form .city {
+    font-size: 0.85em;
+  }
+  .App .main .formSection .Form .city .form-group {
+    font-size: 0.85em;
+  }
+  .App .main .formSection .Form .city .form-group select {
+    font-size: 0.85em;
+  }
+  .App .main .formSection .Form .city .form-group input {
+    font-size: 0.85em;
+  }
+  .App .main .formSection .Form .textareaContainer label {
+    font-size: 0.85em;
+  }
+  .App .main .formSection .Form .textareaContainer .textarea {
+    width: 90%;
+    height: 20vh;
+    font-size: 0.7em;
+  }
+  .App .main .formSection .Form button {
+    font-size: 0.85em;
+  }
+  .App .main .infoShow .imgContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .main .infoShow .imgContainer .minicard {
+    width: 70% !important;
+  }
   .App .footer .nav .card .card-title {
     font-size: 0.75em;
-    text-align: center; }
+    text-align: center;
+  }
   .App .footer .nav .card .card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 6%; }
-    .App .footer .nav .card .card-footer .link-container {
-      font-size: 0.8em; }
-    .App .footer .nav .card .card-footer .imgLink {
-      width: 12%; }
-      .App .footer .nav .card .card-footer .imgLink img {
-        width: 100%; } }
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 6%;
+  }
+  .App .footer .nav .card .card-footer .link-container {
+    font-size: 0.8em;
+  }
+  .App .footer .nav .card .card-footer .imgLink {
+    width: 12%;
+  }
+  .App .footer .nav .card .card-footer .imgLink img {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=MobileApp.css.map */
